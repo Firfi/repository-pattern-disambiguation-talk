@@ -1,6 +1,6 @@
 import { runWithDI } from './repositoryClassConsumer';
 import { IRepository } from '../repositoryPatternClass';
-import { UserId } from '@repository-pattern-disambiguation/repository-pattern-ts';
+import { UserId } from '../types';
 
 describe('repositoryClassConsumer', () => {
   it('should work', () => {
