@@ -26,6 +26,7 @@ export class Repository implements IRepository {
   // now, what get() has to do with this dbSession?
   // we lie to ourselves that get() has something to do with this specific session initialized in this specific class constructor
   // but if we lie to ourselves here won't it make it a habit and propagate to other parts of the system? (yes it does)
+  // also, methods cluttered together; it's always a layer in a layered monolith
   get(userId: UserId): Promise<User> {
     return this.dbSession.get('select * from users where id = ' + userId/*we ignore injections for the sake of brevity*/);
   }

@@ -1,5 +1,5 @@
 import { IRepository, Repository } from '../repositoryPatternClass';
-import { UserId } from '@repository-pattern-disambiguation/repository-pattern-ts';
+import { UserId } from '../types';
 
 export const run = async () => {
   const repository = new Repository();
